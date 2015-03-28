@@ -25,6 +25,15 @@ $(document).ready(function() {
         $(".total_rates").digits();
     });
 
+    $('#ex1').slider().on('slideStop', function(ev){
+        var newVal = $('#ex1').data('slider').getValue();
+        $("#current_value").text("S$" + newVal);
+        $("#current_value").calculation();
+        $("#current_value").digits();
+        $("#one_month").digits();
+        $(".twelve_months").digits();
+        $(".total_rates").digits();
+    });
 
     $('#cardadaptModal').on('shown.bs.modal', function (e) {
       chart.invalidateSize();

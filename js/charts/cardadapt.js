@@ -31,6 +31,10 @@ var chart = AmCharts.makeChart("cardadapt", {
         "year": "2013",
         "workforce": 3443700,
         "card": 7984608
+    }, {
+        "year": "2014",
+        "workforce": 3530800,
+        "card": 8183105
     }],
     "valueAxes": [{
         "unit": "",
