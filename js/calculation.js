@@ -14,9 +14,11 @@ $(document).ready(function() {
         var i = 1;
         while (x >= 0) {
             money_reduction = money - minimum_payment(money);
-            money = money_reduction + (rate * money_reduction);
-            twelve_moth += rate * money_reduction;
+            money = money_reduction + (rate * money_reduction);           
             x = rate * money_reduction;
+            if (i <= 12) {
+                twelve_moth += rate * money_reduction;
+            }
             i++;
         }
         $(".twelve_months").text('S$' + Math.round(twelve_moth));
