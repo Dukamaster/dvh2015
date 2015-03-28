@@ -36,6 +36,9 @@ $(document).ready(function() {
     });
 
     $('#cardadaptModal').on('shown.bs.modal', function (e) {
-      chart.invalidateSize();
+      cardadaptChart.invalidateSize();
+    })
+    $('#expenditureModal').on('shown.bs.modal', function (e) {
+      expenditureChart.invalidateSize();
     })
 });

@@ -1,4 +1,4 @@
-var chart = AmCharts.makeChart("cardadapt", {
+var cardadaptChart = AmCharts.makeChart("cardadapt", {
     "theme": "none",
     "type": "serial",
     "legend": {

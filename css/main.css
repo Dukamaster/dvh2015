@@ -419,3 +419,7 @@ footer .footer-below {
 .modal , .modal p {
   color: #333;
 }
+
+#expenditure a{
+    font-size: 0!important;
+}
