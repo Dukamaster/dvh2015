@@ -25,6 +25,11 @@ $(document).ready(function() {
         }
         $(".twelve_months").text('S$' + Math.round(twelve_moth));
         $(".total_rates").text('S$' + Math.round(total_rates));
+
+        $(".ticket_result").text(Math.round(total_rates/9.5));
+        $(".iphone_result").text(Math.round(total_rates/988));
+        $(".clubmed_result").text(Math.round(total_rates/2500));
+
         get_year_month(i-1);
     }
 
