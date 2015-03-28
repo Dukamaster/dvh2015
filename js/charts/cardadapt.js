@@ -1,6 +1,12 @@
 var chart = AmCharts.makeChart("cardadapt", {
     "theme": "none",
     "type": "serial",
+    "legend": {
+        "markerType": "circle",
+        "position": "bottom",
+        "marginRight": 80,      
+        "autoMargins": false
+    },
     "dataProvider": [{
         "year": "2008",
         "workforce": 2939900,
@@ -29,21 +35,21 @@ var chart = AmCharts.makeChart("cardadapt", {
     "valueAxes": [{
         "unit": "",
         "position": "left",
-        "title": "Number of people",
+        "title": "Count",
     }],
     "startDuration": 1,
     "graphs": [{
         "balloonText": "Number of work force in [[category]]: <b>[[value]]</b>",
         "fillAlphas": 0.9,
         "lineAlpha": 0.2,
-        "title": "2004",
+        "title": "Number of work force",
         "type": "column",
         "valueField": "workforce"
     }, {
         "balloonText": "Number of cards in [[category]]: <b>[[value]]</b>",
         "fillAlphas": 0.9,
         "lineAlpha": 0.2,
-        "title": "2005",
+        "title": "Number of cards",
         "type": "column",
         "clustered":false,
         "columnWidth":0.5,
