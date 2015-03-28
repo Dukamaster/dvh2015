@@ -185,7 +185,7 @@
                         <div class="lab_item">
                             <div class="hexagon hexagon2">
                                 <div class="hexagon-in1">
-                                    <div class="hexagon-in2" style="background-image: url(img/cardadapt_finding2.jpg);"> 
+                                    <div data-toggle="modal" data-target="#cardadaptModal" class="hexagon-in2" style="background-image: url(img/cardadapt_finding2.jpg);"> 
                                     </div>
                                  </div>
                             </div>
@@ -283,19 +283,19 @@
     </footer>
  </body>
 
- <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="cardadaptModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Growing adaptation of cards in Singapore</h4>
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Growing adaptation of cards in Singapore</h4>
         </div>
         <div class="modal-body">
-        <div id="chart_div1" style="width:800; height:700"></div>
-        <div>    
-            <p>There is a growing adaptation of cards in Singapore
-            <br>By 2014, the card to working person ratio is 2.3</p>
-        </div>
+            <div id="cardadapt" style="width: 100%; height: 400px;"></div>
+            <div>    
+                <p>There is a growing adaptation of cards in Singapore
+                <br>By 2014, the card to working person ratio is 2.3</p>
+            </div>
         </div>
         <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -310,6 +310,10 @@
 <script type="text/javascript" src="js/calculation.js"></script>
 <script type="text/javascript" src="js/waypoint.min.js"></script>
 <script type="text/javascript" src="js/animation.js"></script>
-<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript" src="http://www.amcharts.com/lib/3/amcharts.js"></script>
+<script type="text/javascript" src="http://www.amcharts.com/lib/3/serial.js"></script>
+<script type="text/javascript" src="js/charts/cardadapt.js"></script>
+
+    
 <script type="text/javascript" src="js/include.js"></script>
 </html>

@@ -24,27 +24,9 @@ $(document).ready(function() {
         $(".twelve_months").digits();
         $(".total_rates").digits();
     });
+
+
+    $('#cardadaptModal').on('shown.bs.modal', function (e) {
+      chart.invalidateSize();
+    })
 });
-
-google.load("visualization", "1.1", {packages:["bar"]});
-google.setOnLoadCallback(drawChart);
-function drawChart() {
-    var data = google.visualization.arrayToDataTable([
-      ['Year', 'No of work force', 'No of cards'],
-      ['2008', '2939900', '5055387'],
-      ['2009', '3030000', '5418553'],
-      ['2010', '3135900', '6141870'],
-      ['2011', '3237100', '6883993'],
-      ['2012', '3361800', '7843765'],
-      ['2013', '3443700', '7984608'],
-      ['2014', '3530800', '8183105'],
-    ]);
-
-    var options = {
-      'width':500,
-      'height':400
-    }
-    var chart = new google.charts.Bar(document.getElementById('chart_div1'));
-
-    chart.draw(data, options);
-}
