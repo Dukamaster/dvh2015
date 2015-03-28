@@ -41,4 +41,11 @@ $(document).ready(function() {
     $('#expenditureModal').on('shown.bs.modal', function (e) {
       expenditureChart.invalidateSize();
     })
+    $('#interestrateModal').on('shown.bs.modal', function (e) {
+      interestrateChart.invalidateSize();
+    })
+    $('#deptcardModal').on('shown.bs.modal', function (e) {
+      deptChart.invalidateSize();
+    })
+    
 });

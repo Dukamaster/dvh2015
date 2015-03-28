@@ -1,67 +1,121 @@
-var cardadaptChart = AmCharts.makeChart("cardadapt", {
-    "theme": "none",
+var deptChart = AmCharts.makeChart("deptcard", {
     "type": "serial",
+    "theme": "none",
+    "pathToImages": "http://www.amcharts.com/lib/3/images/",
     "legend": {
-        "markerType": "circle",
-        "position": "bottom",
-        "marginRight": 80,      
-        "autoMargins": false
+        "equalWidths": false,
+        "periodValueText": "total: [[value.sum]]",
+        "position": "top",
+        "valueAlign": "left",
+        "valueWidth": 100
     },
-    "dataProvider": [{
-        "year": "2008",
-        "workforce": 2939900,
-        "card": 5055387
+   "dataProvider": [{
+        "year": 2000,
+        "balances": 1712,
+        "baddebt": 121
     }, {
-        "year": "2009",
-        "workforce": 3030000,
-        "card": 5418553
+        "year": 2001,
+        "balances": 2076.5,
+        "baddebt": 146
     }, {
-        "year": "2010",
-        "workforce": 3135900,
-        "card": 6141870
+        "year": 2002,
+        "balances": 2390.8,
+        "baddebt": 138
     }, {
-        "year": "2011",
-        "workforce": 3237100,
-        "card": 6883993
+        "year": 2003,
+        "balances": 2533.1,
+        "baddebt": 127
     }, {
-        "year": "2012",
-        "workforce": 3361800,
-        "card": 7843765
+        "year": 2004,
+        "balances": 2640.8,
+        "baddebt": 105
     }, {
-        "year": "2013",
-        "workforce": 3443700,
-        "card": 7984608
+        "year": 2005,
+        "balances": 2842.1,
+        "baddebt": 109
     }, {
-        "year": "2014",
-        "workforce": 3530800,
-        "card": 8183105
+        "year": 2006,
+        "balances": 2822.4,
+        "baddebt": 112
+    }, {
+        "year": 2007,
+        "balances": 2979.4,
+        "baddebt": 101
+    }, {
+        "year": 2008,
+        "balances": 3378.8,
+        "baddebt": 97
+    }, {
+        "year": 2009,
+        "balances": 3702.1,
+        "baddebt": 93
+    }, {
+        "year": 2010,
+        "balances": 4014.7,
+        "baddebt": 111
+    }, {
+        "year": 2011,
+        "balances": 4537.9,
+        "baddebt": 87
+    }, {
+        "year": 2012,
+        "balances": 4991.8,
+        "baddebt": 79
+    }, {
+        "year": 2013,
+        "balances": 5362.9,
+        "baddebt": 81
+    }, {
+        "year": 2014,
+        "balances": 5500.6,
+        "baddebt": 75
     }],
     "valueAxes": [{
-        "unit": "",
+        "id": "distanceAxis",
+        "axisAlpha": 0,
+        "gridAlpha": 0,
         "position": "left",
-        "title": "Count",
-    }],
-    "startDuration": 1,
-    "graphs": [{
-        "balloonText": "Number of work force in [[category]]: <b>[[value]]</b>",
-        "fillAlphas": 0.9,
-        "lineAlpha": 0.2,
-        "title": "Number of work force",
-        "type": "column",
-        "valueField": "workforce"
+        "title": "distance"
     }, {
-        "balloonText": "Number of cards in [[category]]: <b>[[value]]</b>",
-        "fillAlphas": 0.9,
-        "lineAlpha": 0.2,
-        "title": "Number of cards",
-        "type": "column",
-        "clustered":false,
-        "columnWidth":0.5,
-        "valueField": "card"
+        "id": "durationAxis",
+        "axisAlpha": 0,
+        "gridAlpha": 0,
+        "inside": true,
+        "position": "right",
+        "title": "duration"
     }],
-    "plotAreaFillAlphas": 0.1,
+    "graphs": [{
+        "balloonText": "<img src='http://www.amcharts.com/lib/3/images/motorcycle.png' style='vertical-align:bottom; margin-right: 10px; width:28px; height:21px;'><span style='font-size:14px; color:#000000;'><b>[[value]]</b></span>",
+        "fillAlphas": 0.6,
+        "lineAlpha": 0.4,
+        "title": "Rollover balance",
+        "valueField": "balances",
+        "valueAxis": "distanceAxis"
+    },{
+        "bullet": "square",
+        "bulletBorderAlpha": 1,
+        "bulletBorderThickness": 1,
+        "dashLengthField": "dashLength",
+        "legendValueText": "[[value]]",
+        "title": "duration",
+        "fillAlphas": 0,
+        "valueField": "baddebt",
+        "valueAxis": "durationAxis"
+    }],
+    "chartCursor": {
+        "categoryBalloonDateFormat": "DD",
+        "cursorAlpha": 0.1,
+        "cursorColor":"#000000",
+         "fullWidth":true,
+        "valueBalloonsEnabled": false,
+        "zoomable": false
+    },
     "categoryField": "year",
     "categoryAxis": {
-        "gridPosition": "start"
-    }
+        "autoGridCount": false,
+        "axisColor": "#555555",
+        "gridAlpha": 0.1,
+        "gridColor": "#FFFFFF",
+        "gridCount": 50
+    },
 });
