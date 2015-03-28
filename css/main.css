@@ -32,6 +32,10 @@ body p {
     font-weight: 700;
 }
 
+.navbar-default .navbar-brand , .navbar-default .navbar-nav>li>a {
+    color: white;
+}
+
 .img-center img {
     margin: 0 auto;
 }

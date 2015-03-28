@@ -2,7 +2,9 @@
 <html>
 <head>
     <title>Understanding credit card debts</title>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap-slider.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/fontawesome.min.css">
@@ -75,7 +77,7 @@
                 <div class="col-lg-12">
                     <div class="col-sm-5 col-md-6">
                         <div class="text-right rate_explain r1 display_none">
-                            <h1><span class="page-header" id="one_month">S$35</span></h2>
+                            <h1><span id="one_month">S$35</span></h2>
                             <p class="font_increase">Cost of Interest Rates</p>
                             <p class="font_increase">incurred in the first month of loan</p>
                             <p>Assuming 1.8% of monthly interest rates</p>
@@ -103,7 +105,7 @@
                     </div>
                     <div class="col-sm-5 col-md-6">
                         <div class="text-left rate_explain r2 display_none">
-                            <h1><span class="page-header twelve_months">S$35</span></h2>
+                            <h1><span class="twelve_months">S$35</span></h2>
                             <p class="font_increase">Cost of Interest Rates</p>
                             <p class="font_increase">incurred in the one year</p>
                             <p>1.8% of monthly interest rates is about</p>
@@ -202,7 +204,7 @@
                         <div class="lab_item">
                             <div class="hexagon hexagon2">
                                 <div class="hexagon-in1">
-                                    <div  data-toggle="modal" data-target="#interestrateModal" class="hexagon-in2" style="background-image: url(img/cardcardinterest_finding4.jpg);">                
+                                    <div data-toggle="modal" data-target="#interestrateModal" class="hexagon-in2" style="background-image: url(img/cardcardinterest_finding4.jpg);">                
                                     </div>
                                  </div>
                             </div>
@@ -210,7 +212,7 @@
                         <div class="lab_item">
                             <div class="hexagon hexagon2">
                                 <div class="hexagon-in1">
-                                    <div class="hexagon-in2" style="background-image: url(img/understanding_credit_cards.jpg);">                
+                                    <div data-toggle="modal" data-target="#understandcardModal" class="hexagon-in2" style="background-image: url(img/understanding_credit_cards.jpg);">                
                                     </div>
                                 </div>
                             </div>
@@ -293,8 +295,9 @@
         </div>
         <div class="modal-body">
             <div id="deptcard" style="width: 100%; height: 400px;" class="chart_mark"></div>
-            <div class="text-left">    
-                <p>The rollover balance and bad debts written off have been raising over the years. <br>In 2014, the rollover balance is at $ 5.5 billion. That works out to $1557  on credit per working person in Singapore.<br>In just four years, the amount of bad debts written off have increased by 50% to $ 273 million in 2014</p>
+            <div class="text-center">    
+                <p>The rollover balance and bad debts written off have been raising over the years. <br>In 2014, the rollover balance is at $ 5.5 billion. That works out to $1557  on credit per working person in Singapore.</p>
+                <h4>In just four years, the amount of bad debts written off have increased by 50% to $ 273 million in 2014</h4>
             </div>
         </div>
         <div class="modal-footer">
@@ -314,8 +317,8 @@
         <div class="modal-body">
             <div id="cardadapt" style="width: 100%; height: 400px;" class="chart_mark"></div>
             <div class="text-center">    
-                <p>The number of credit cards owned have increased faster than the number of working adults in Singapore, showing a growing adaptation of credit cards in the country.
-                By 2014, the card to working person ratio is 2.3</p>
+                <p>The number of credit cards owned have increased faster than the number of working adults in Singapore, showing a growing adaptation of credit cards in the country.</p>
+                <h4>By 2014, the card to working person ratio is 2.3</h4>
             </div>
         </div>
         <div class="modal-footer">
@@ -335,7 +338,7 @@
         <div class="modal-body">
             <div id="expenditure" style="width: 100%; height: 400px;" class="chart_mark"></div>
             <div class="text-center">    
-                <p>Based on a 2012/2013 expenditure survey, there is 6% of the households with income between $3k to $12 who are spending more than they earn.
+                <p>Based on a 2012/2013 expenditure survey, there is 6% of the households with income between $12k to $15K who are spending more than they earn.
                 <br>This translates to 42004 households potentially at risk of being in debt</p>
                 <h4>The lower income group are at higher risk</h4>
             </div>
@@ -358,9 +361,38 @@
             <div id="interestrate" style="width: 100%; height: 400px;" class="chart_mark"></div>
             <div class="text-center">   
                 <p style="color:#5f5f5f;">Secured loans: House loan, Car loan <br> Unsecured loans: Personal loans, Credit card</p>
-                <h4>Credit card loans are high</h4>
+                <h4>Credit cards have high interest rates</h4>
                 <p>* The values are taken from the websites at the point in time where the loans are offered. Note that this only serve as a generic gauge and is not representative of all loans rates.</p>
             </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="understandcardModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Understanding Credit Cards</h4>
+        </div>
+        <div class="modal-body">
+            <div class="col-lg-12">
+                <div class="img-center ">
+                    <img src="img/cc2.png" width="50%">
+                </div>
+            </div>
+            <h4>It is a form of borrowing</h4>
+            <p>Interest will be charged on outstanding balance which you have yet to repay. It may be a convenient mode of payment as it allows yourtube to buy goods and services without using cash, but it is not intended to be a long-term credit facility.</p>
+            <h4>Grace period or free credit period.</h4>
+            <p>Usually, there is a grace period of between 20-25 days for you to pay the outstanding balance on your credit card in full, without incurring interest. Prevent incurring interest costs by paying within this period.</p>
+            <h4>Minimum Payment</h4>
+            <p>The minimum amount that you have to repay on your credit card each month. Failing to pay this amount will result in incurring late payment charges, higher interest charged to your existing debt and could also affect your credit ratings.</p>
+            <h4>Credit limit</h4>
+            <p>Credit limit refers to the maximum amount in which a credit card company will allow someone to borrow on a single card. The card issuer will usually assess your repayment ability before deciding what credit limit to be set. </p>
         </div>
         <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

@@ -236,7 +236,8 @@ var expenditureChart = AmCharts.makeChart("expenditure", {
         "axisAlpha": 0,
         "gridAlpha": 0,
         "labelsEnabled": false,
-        "position": "left"
+        "position": "left",
+        "minimum":80
     }],
     "graphs": [{
         "balloonText": "[[title]], [[category]]<br><span style='font-size:14px;'><b>[[value]]</b> ([[percents]]%)</span>",
