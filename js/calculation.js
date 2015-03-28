@@ -10,6 +10,7 @@ $(document).ready(function() {
         $("#one_month").text('S$' + one_month);
 
         var twelve_moth = 0;
+        var total_rates = 0;
         var x = 1;
         var i = 1;
         while (x >= 0) {
@@ -19,9 +20,11 @@ $(document).ready(function() {
             if (i <= 12) {
                 twelve_moth += rate * money_reduction;
             }
+            total_rates += rate * money_reduction;
             i++;
         }
         $(".twelve_months").text('S$' + Math.round(twelve_moth));
+        $(".total_rates").text('S$' + Math.round(total_rates));
         get_year_month(i-1);
     }
 

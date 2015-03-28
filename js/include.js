@@ -22,6 +22,7 @@ $(document).ready(function() {
         $("#current_value").digits();
         $("#one_month").digits();
         $(".twelve_months").digits();
+        $(".total_rates").digits();
     });
 });
 
