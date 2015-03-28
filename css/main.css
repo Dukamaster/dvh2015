@@ -201,7 +201,7 @@ body p {
 }
 
 #equal_item .ticket {
-    background-image: url('/img/ticket.png');
+    background-image: url('img/ticket.png');
     background-repeat: no-repeat; 
     display: block;
     background-size: 50px;
@@ -209,7 +209,7 @@ body p {
 }
 
 #equal_item .iphone {
-    background-image: url('/img/iphone.png');
+    background-image: url('img/iphone.png');
     background-repeat: no-repeat;  
     display: block;
     background-size: 30px;
@@ -217,7 +217,7 @@ body p {
 }
 
 #equal_item .maldive {
-    background-image: url('/img/maldives.png');
+    background-image: url('img/maldives.png');
     background-repeat: no-repeat;  
     display: block;
     background-size: 50px;
