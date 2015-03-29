@@ -427,3 +427,19 @@ footer .footer-below {
 .chart_mark a{
     font-size: 0!important;
 }
+
+@media(max-width: 1200px) {
+    #total_rate .tag {
+        margin-left: 174px;
+    }
+    #introduction img.cc {
+        margin-left: -10%;
+    }
+    #video iframe {
+        position: absolute;
+        margin-top: 33px;
+        margin-left: 221px;
+        width: 500px;
+        height: 280px;
+  } 
+}
