@@ -47,5 +47,8 @@ $(document).ready(function() {
     $('#deptcardModal').on('shown.bs.modal', function (e) {
       deptChart.invalidateSize();
     })
+
+    $('.hover').popover();
+
     
 });

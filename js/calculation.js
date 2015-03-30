@@ -27,8 +27,8 @@ $(document).ready(function() {
         $(".total_rates").text('S$' + Math.round(total_rates));
 
         $(".ticket_result").text(Math.round(total_rates/9.5));
-        $(".iphone_result").text(Math.round(total_rates/988));
-        $(".clubmed_result").text(Math.round(total_rates/2500));
+        $(".iphone_result").text((total_rates/988).toFixed(1));
+        $(".clubmed_result").text((total_rates/2500).toFixed(1));
 
         get_year_month(i-1);
     }

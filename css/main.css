@@ -443,3 +443,16 @@ footer .footer-below {
         height: 280px;
   } 
 }
+
+.hover {
+    color: white;
+}
+
+a.hover:hover {
+    color: #A9A9A9;
+    text-decoration: none;
+}
+
+.popover {
+    color: black;
+}

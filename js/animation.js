@@ -29,6 +29,10 @@ $(document).ready(function(){
             $('.cc').removeClass('display_none');
         },1200);
         setTimeout(function(){
+            $('.cc').removeClass('wobble');
+            $('.cc').addClass('animated bounce infinite');
+        },1800);
+        setTimeout(function(){
             $('#slider').addClass('animated bounceIn');
             $('#slider').removeClass('display_none');
         },1800);
